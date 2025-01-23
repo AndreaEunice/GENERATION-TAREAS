@@ -1,0 +1,149 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- Enlace del CDN de CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <header>
+        <h1>Hello, world!</h1>
+    </header>
+
+<!-- Contenedores -->
+    <div class="container" style="background-color: deepskyblue;">
+        <h1>Contenedor 1</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe autem dicta similique. Dolor facilis, atque debitis, dolorem placeat recusandae cumque impedit velit sapiente aperiam deleniti quas vero vitae dolorum distinctio.
+        </p>
+    </div>
+
+    <div class="container-fluid" style="background-color: hotpink;">
+        Contenedor 2
+
+    </div> 
+
+    <div class="container-lg" style="background-color: #fd7e14;"> <!-- Contenedor con breakpoint especifico. En pantallas xs, s y md ocupara todo el ancho disponible, mientras que en pantallas lg, xl y xxl tendrá un ancho especifico que no es el 100% -->
+        Contenedor 3
+    </div>
+
+    <!-- GRID 
+        Cada fila esta dividida en 12 columnas que se pueden distribuir de diferentes maneras 
+        Row = Fila; es horizontal
+        Col = Columna; es vertical-->
+
+        <main>
+            <div class="container">
+                <div class="row"> <!-- Cuando no hay especificación en el tamaño de columnas -->
+
+                    <div class="col border"> Columna 1
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo non temporibus rem nam, dolores unde sapiente ducimus velit officia at nulla perferendis, quae iste necessitatibus? Soluta pariatur totam tempore placeat.
+                        </p>
+                    </div>
+                        
+
+                    <div class="col border"> Columna 2
+                        <ol>
+                            <li>"El camino de los reyes" -Brandon Sanderson</li>
+                            <li> "Clean code -Martin Robertson </li>
+                            <li> "Los recuerdos del porvenir" -Elena Garro</li>
+                            <li> "100 años de soledad" -Gabriel García Márquez</li>
+                            <li> "Padre rico, padre pobre" -Robert Kiyosaki y Sharon Lechtes</li>
+                        </ol>
+                    </div>
+
+
+                    <div class="col border"> Columna 3 
+                        <img class="img-fluid" src="https://symbl-world.akamaized.net/i/webp/b7/9f24464ae2bd8fcc5fda823f02469d.webp" alt="Emoji carita sonriente con ojos sonrientes">
+
+                        <div class="row">
+                            <div class="col border"> Información técnica 
+                                <p> Nombre unicode: cara feliz con ojos sonriente. Se le conoce con los nombres: Happy Face, Smile, Smiley Face </p>
+                            </div>
+                            <div class="col border"> Datos curiosos
+                                <p> En Snapchat, este emoji junto a un contacnto denota que envias mensajes a esa persona con frecuencia, pero que no es tu mejor amigo </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- 12 columnas -->
+         <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col"> 1 </div>
+                    <div class="col"> 2 </div>
+                    <div class="col"> 3 </div>
+                    <div class="col">4</div>
+                    <div class="col">5</div>
+                    <div class="col">5</div>
+                    <div class="col">7</div>
+                    <div class="col">8</div>
+                    <div class="col">9</div>
+                    <div class="col">10</div>
+                    <div class="col">11</div>
+                    <div class="col">12</div>
+                    <!-- Se pueden poner mas de 12 columnas y Bootstrap lo permitira, a menos que especifique un tamaño, ahí se ceuntan las 12 columnas, y si se excede dara un salto de linea para poner las columnas sobrantes en una nueva fila -->
+                     <div class="col">13</div>
+                     <div class="col">14</div>
+                </div>
+            </div>
+         </section>
+
+         <!-- Columnas con anchos diferentes / breakpoints 
+            En col-1 determinamos cuantos espacios usara esa columna, y caundo se exceden las 12 columnas con el tamaño determinado, la columna excedente se pasa a una nueva fila. cuando es col-12 col-md-6 col-lg-3 se indican las medidas que debera tener segun tamaño especifico de pantalla, en pequeña 12, en mediana 6 y en grandes 3 columnas, es importante ir de las menores a las mayores -->
+          <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 border" style="background-color: chocolate;">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem officiis nam distinctio itaque ut quos soluta alias voluptates molestias sed, vero fugiat sapiente rem, velit eveniet impedit debitis voluptatum! Porro!
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 border" style="background-color:aquamarine">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut soluta tempora eum est ipsa corporis vel aspernatur sapiente eveniet quaerat laboriosam rem, incidunt, molestiae odit illo fugiat suscipit quae officiis!
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 border" style="background-color: darkkhaki;">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, totam asperiores illo repellat eveniet rem ducimus nemo enim sequi inventore ad, debitis soluta maiores numquam quos. Minus minima enim voluptate?
+                    </div>
+
+                    <div class="col-12 border" style="background-color: blueviolet;">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae non, quia impedit officiis laudantium ipsum similique aspernatur id recusandae magni sunt architecto enim esse cum autem adipisci eaque soluta maxime!
+                    </div>
+
+                    <div class="col-1 border" style="background-color: cornflowerblue;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia delectus ipsam id sint expedita, maiores accusamus numquam laborum, corrupti harum rerum debitis voluptatem labore quia suscipit est nam? Ad, corporis.
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <!-- COlumnas con breakpoints sin usar tantas clases -->
+           <section>
+            <div class="continer">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                    <div class="col border"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam deleniti qui aperiam doloremque sunt quisquam! Nam, eum cum. Nesciunt error tempora quod, eos enim rem vero voluptas fugit consectetur.
+                    </div>
+
+                    <div class="col border"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure tenetur quis ea quasi qui illum quaerat voluptatum exercitationem minima veniam ipsam facere rem beatae, possimus, esse doloribus earum velit enim?
+                    </div>
+
+                    <div class="col border"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil obcaecati deserunt voluptatibus aliquam repellendus numquam! Libero blanditiis molestiae ipsum a mollitia? Cupiditate labore aut voluptatem natus quas obcaecati nobis illo.</div>
+
+                    <div class="col border"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatum repudiandae inventore quas! Sed, magnam sunt commodi vel ratione quae odio a culpa nam perspiciatis tempora ipsa, porro illo eveniet.
+                    </div>
+                </div>
+            </div>
+           </section>
+
+
+    <!-- Enlace de CDN de JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
